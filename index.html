@@ -10,8 +10,13 @@
 
 <body>
   <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" onclick="closeNav()">Close Menu</a>
-    <div id="itemList">
+    <a href="#" onclick="closeNav()">Close Menu</a>
+    <div id="itemlist">
+      <div id="extra_added_links">
+      <a href="#">Loans</a>
+      <a href="#">Finance</a>
+      <a href="#">Debt</a>
+      </div>
       <a href="#">Insurance</a>
       <a href="#">Mortgage</a>
       <a href="#">Home Insurance</a>
@@ -21,9 +26,9 @@
     </div>
   </div>
 
-  <div id="main">
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-    <span style="font-size:30px;cursor:pointer" onclick="onClickLogin()" class="login">Login</span>
+  <div class="main">
+    <span class="clickable" id="menu" onclick="openNav()"><img src="assets/menu.svg" alt="menu"></span>
+    <span class="clickable login" id="login" onclick="onClickLogin()">Login</span>
 
     <section>
       <div class="cards">
@@ -37,7 +42,6 @@
           <h3>Get Best Car Insurance</h3>
           <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum.
             Sed nulla amet lorem feugiat tempus aliquam.</p>
-
         </article>
         <article class="article">
           <a href="#" class="image"><img src="assets/crediCard.jpg" alt="" /></a>
@@ -109,22 +113,22 @@
       <p>You will love it once you try it.</p>
     </section>
     <hr class="dashed">
-     <footer class="fContent">
-      <section class="footerData">
+     <footer class="footer_content">
+      <section class="footerData" id="rights_section">
         <h3>FOOTER</h3>
         <p>All Rights Reserved</p>
       </section>
-      <section class="footerData">
+      <section class="footerData" id="article_section">
           <h3>BLOGS AND ARTICLES</h3>
-          <a href="#" class="articleimg"><img src="assets/crediCard.jpg" alt="" /></a>
-          <span class="art">article 1</span>
+          <img class="article_image" src="assets/crediCard.jpg" alt="" />
+          <a href="#" class="articlei"><span class="art">article 1</span></a>
           <p>Best Articles</p>
           <hr class="dashed">
-          <a href="#" class="articleimg"><img src="assets/crediCard.jpg" alt="" /></a>
-          <span class="art">article 2</span>
+          <img class="article_image"src="assets/crediCard.jpg" alt="" />
+          <a href="#" class="articlei"><span class="art">article 2</span></a>
           <p>some good stuff</p>
         </section>
-        <section class="footerData">
+        <section class="footerData" id="link_section">
           <h3>INSURANCE TYPES</h3>
           <div class="links">
             <a href="#">home</a>
@@ -146,7 +150,6 @@
       </section>
     </footer>
   </div>
-
 
   <script src="js/script.js"></script>
 
